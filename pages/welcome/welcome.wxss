@@ -1,0 +1,12 @@
+/* pages/welcome/welcome.wxss */
+.container,.welcome,.swiper-item,.slide-image{
+  height:100%;
+  width:100%;
+}
+.start{
+  position: fixed;
+  bottom: 100px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 140px;
+}

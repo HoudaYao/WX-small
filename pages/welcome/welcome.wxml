@@ -1,0 +1,14 @@
+<view class="container">
+  <swiper 
+    indicator-dots
+    indicator-active-color="orange"
+    class="welcome"
+  >
+    <block wx:for="{{movies}}" wx:key="id">
+      <swiper-item class="swiper-item">
+        <image class="slide-image" src="{{item.image}}"></image>
+        <button bindtap="clickHandler" wx:if="{{movies.length-1 === index}}" class="start">立即体验</button>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

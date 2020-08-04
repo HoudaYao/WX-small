@@ -1,0 +1,10 @@
+<view class="item" bindtap="toDetail">
+    <image class="poster" src="{{item.images.small}}" ></image>
+    <view class="meta">
+      <text class="title">{{item.title}}</text>
+      <text class="average info">评分:{{item.rating.average ||'暂无评分'}}</text>
+      <text class="directors info">导演：{{item.directors[0].name}} </text>
+      <text class="casts info">主要演员:<block wx:for="{{item.casts}}" wx:key="id">{{item.name}} </block></text>
+      <text class="pubdates info">上映时间：{{item.pubdates[0]}}</text>
+    </view>
+</view>

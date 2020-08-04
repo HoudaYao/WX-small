@@ -1,0 +1,7 @@
+<!--pages/board/list/list.wxml-->
+<view class="container">
+  <block wx:for="{{list}}" wx:key="id">
+      <product item="{{item}}" collectionName="{{key}}"/>
+  </block>
+</view>
+

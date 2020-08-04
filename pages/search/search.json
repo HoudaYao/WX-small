@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "load-more":"/components/load-more/load-more"
+  },
+  "enablePullDownRefresh":true,
+  "navigationBarTitleText": "搜索"
+}

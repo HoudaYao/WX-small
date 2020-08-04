@@ -1,0 +1,9 @@
+.input{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color:black;
+}
+.input input{
+  border: 1px solid black;
+}

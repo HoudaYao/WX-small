@@ -1,0 +1,30 @@
+
+<view class="container">
+  <view class="mine">
+      <view class="info" bindtap="toBoard">
+        <image src="/images/vd.png" class="img"></image>
+        <text>观看记录</text>
+      </view>
+      <view class="info" bindtap="toBoard">
+        <image src="/images/my.png" class="img"></image>
+        <text>观看记录</text>
+      </view>
+      <view class="info" bindtap="toBoard">
+        <image src="/images/tuijian.png" class="img"></image>
+        <text>观看记录</text>
+      </view>
+      <view class="info" bindtap="toBoard">
+        <image src="/images/open.png" class="img"></image>
+        <text>观看记录</text>
+      </view>
+  </view>
+  <view class="inform">
+    <navigator url="/pages/board/board">
+      <view wx:for="{{list}}" wx:key="key" class="state">
+      <image src="{{item.path}}" class="state-img"></image>
+      <text class="title">{{item.title}}</text>
+      <image src="/images/arrowright.png" class="state-img-in"></image>
+    </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container">
+  <swiper indicator-dots class="swiper">
+    <block wx:for="{{banner.content}}" wx:key="id">
+      <navigator url="{{'/pages/detail/detail?id='+item.id+'&collectionName='+banner.key}}">
+        <swiper-item class="swiper-item">
+          <image class="slide-image" src="{{item.image}}"></image>
+        </swiper-item>
+      </navigator> 
+    </block>
+  </swiper>
+<view class="board">
+  <navigator 
+    wx:for="{{list}}" 
+    wx:key="key" 
+    url="{{'/pages/list/list?key='+item.key+'&title='+item.title}}"
+  >
+    <view class="aside"  >
+        <text class="text">{{item.title}}</text>
+        <image src="/images/arrowright.png" class="text-img"></image>
+    </view>
+  </navigator>
+</view>
+</view>

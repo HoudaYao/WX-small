@@ -1,0 +1,14 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <view class="input">
+    <input 
+      placeholder="{{subtitle}}"
+      value="{{search}}"
+      bindchange="handlerSearch"
+    />
+  </view>
+  <view class="list">
+    <product wx:for="{{list}}" wx:key="id" collectionName="top250" item="{{item}}"/>
+  </view>
+  <load-more loading="{{loading}}" flag="{{flag}}"></load-more>
+</view>

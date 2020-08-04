@@ -1,0 +1,32 @@
+.container{
+  background: #ffffff;
+}
+.item{
+  display: flex;
+  margin: 20rpx;
+  padding: 30rpx;
+  background: #F8F8FF;
+}
+.item .poster{
+  display: block;
+  width: 230rpx;
+  height: 300rpx;
+}
+.item .meta{
+  display: flex;
+  flex-direction: column;
+  margin-left: 28rpx;
+}
+.meta .info{
+  font-size: 14px;
+  color: #696969;
+  margin-top: 16rpx;
+
+}
+.meta .title{
+  color: #191a1b;
+  font-size: 16px;
+  height: 44rpx;
+  line-height: 44rpx;
+  margin-right: 5px;
+}

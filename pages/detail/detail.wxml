@@ -1,0 +1,20 @@
+
+<view class="container">
+  <view  wx:if="{{detail.title}}">
+    <image mode="scaleToFill" class="background" src="{{detail.images.small}}"></image>
+    <view class="meta">
+      <image class="poster" bindtap="clickPhotos" src="{{photos[0]}}"></image>
+      <text class="title">{{detail.title}}</text>
+      <text class="info">评分：{{detail.rating.average || "暂无评分"}}</text>
+      <text class="info">导演：<block wx:for="{{detail.directors}}" wx:key="id">{{item.name}} </block></text>
+      <text class="info">演员：<block wx:for="{{detail.casts}}" wx:key="id">{{item.name}} </block></text>
+    </view>
+    <view class="summary">
+      <text class="label">摘要：</text>
+      <text class="content">{{detail.summary}}</text>
+    </view>
+  </view>
+  <view wx:else>
+    <image src="/images/loading.gif"></image>
+  </view>
+</view>

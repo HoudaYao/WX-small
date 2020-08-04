@@ -1,0 +1,9 @@
+<view class="tip" wx:if="{{flag}}">
+  <view wx:if="{{loading}}">
+    <image src="/images/loading.gif"></image>
+    <text class="txt">玩命加载...</text>
+  </view>
+  <view wx:else>
+    <text>----没有更多数据---</text>
+  </view>
+</view>
